@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Page</title>
+  </head>
+  <body>
+    <h2>Login with SNS</h2>
+    <a href="/auth/google">Login with Google</a>
+    <!-- Add more SNS login options here -->
+    <hr />
+    <h2>Login with Email and Password</h2>
+    <form method="POST" action="/login">
+      <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" />
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" />
+      </div>
+      <button type="submit">Login</button>
+    </form>
+    <hr />
+    <p>Don't have an account?</p>
+    <form method="POST" action="/signup">
+      <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" />
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" />
+      </div>
+      <button type="submit">Sign</button>
+    </form>
+  </body>
+</html>
